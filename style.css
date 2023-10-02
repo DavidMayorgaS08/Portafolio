@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:Georgia, Times, serif;
+}
+
+body{
+    background-color: #CCD1D1;
 }
 
 .loader{
@@ -28,7 +33,7 @@
     display: block;
     white-space: nowrap;
     border-right: 2px solid;
-    width: 13ch;
+    width: 11ch;
     animation: typing 1s steps(10), blink .3s infinite step-end alternate;
     overflow:hidden;
 }
@@ -39,4 +44,46 @@
 
 @keyFrames blink{
     50% { border-color: transparent;}
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    background-color: #000000;
+    color: #ffffff;
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.info{
+    width: 100%;
+    height: 75vh;
+    padding: 0px 15%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    padding-top: 50px;
+    gap: 50px;
+}
+
+.img{
+    width: 100%;
+    height: auto;
+}
+
+.cont_a::before{
+    background-color: #7F8C8D; /* Color gris con opacidad */
+    opacity: 0; /* La capa gris es invisible por defecto */
+    transition: opacity 0.3s ease;
+}
+
+.cont_a:hover::before{
+    opacity: 1;
 }
