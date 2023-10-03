@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #CCD1D1;
+    background-color: #E2E7FC;
 }
 
 .loader{
@@ -54,8 +54,10 @@ section{
 
 .header{
     width: 100%;
-    height: 25vh;
-    background-color: #000000;
+    height: 35vh;
+    background-image: url(./img/fondo.jpg);
+    background-position: center;
+    background-size: cover;
     color: #ffffff;
     display: flex;
     justify-content: center;

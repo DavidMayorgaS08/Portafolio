@@ -18,7 +18,7 @@ elementos.forEach(function(elemento) {
 
     elemento.addEventListener('mouseover', function() {
         let texto = elemento.querySelector('.text');
-        texto.textContent = 'Visitar Sitio';
+        texto.textContent = 'Visitar';
         texto.classList.add('negrita');
     });
 
